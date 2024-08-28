@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.btn {
+		@apply bg-black text-white px-4 py-2 rounded-lg font-medium items-center justify-center tracking-tight;
+	}
+	.btn-primary {
+		@apply bg-black text-white;
+	}
+
+	.btn-text {
+		@apply text-black bg-transparent;
+	}
+}
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +43,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
