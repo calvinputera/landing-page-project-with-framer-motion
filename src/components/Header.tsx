@@ -120,11 +120,11 @@ const Header = () => {
               className="flex flex-col justify-center gap-4 items-center h-full py-5"
             >
               {navigation.map((item, index) => (
-                <div className="overflow-hidden">
+                <div className="overflow-hidden" key={index}>
                   <motion.div
                     variants={navigationVariant}
                   >
-                    <a className="text-4xl overflow-hidden" key={index} href={item.href}>{item.name}</a>
+                    <a className="text-4xl overflow-hidden" href={item.href}>{item.name}</a>
                   </motion.div>
                 </div>
               ))}
