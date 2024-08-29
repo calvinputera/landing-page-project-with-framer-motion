@@ -1,3 +1,4 @@
+import { navigation } from "@/data";
 import Image from "next/image";
 
 const Header = () => {
@@ -5,9 +6,9 @@ const Header = () => {
     <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">Stream your workflow and boost your productivity</p>
-        <div className="inline-flex gap-1 items-center">
+        <div className="inline-flex gap-2 items-center">
           <p>Get Started For Free</p>
-          <Image src="/assets/arrow-right.svg" alt="arrow-right" width={20} height={20} className="text-white bg-white" />
+          <Image src="/assets/arrow-right.svg" alt="arrow-right" width={20} height={20} className="text-white bg-white rounded-md" />
         </div>
       </div>
       <div className="py-5">
@@ -21,11 +22,9 @@ const Header = () => {
             />
             <Image src="/assets/menu.svg" alt="menu" width={20} height={20} className="md:hidden" />
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
-              <a href="#">About</a>
-              <a href="#">Features</a>
-              <a href="#">Customer</a>
-              <a href="#">Updates</a>
-              <a href="#">Help</a>
+              {navigation.map((item, index) =>
+                <a key={index} href={item.href}>{item.name}</a>
+              )}
               <button className="btn">Get for free</button>
             </nav>
           </div>

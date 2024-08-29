@@ -14,11 +14,11 @@ const Hero = () => {
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat iusto quo cumque unde magnam nihil aut sequi eligendi fugiat, pariatur laudantium, voluptate voluptas necessitatibus optio porro. Laudantium, vel tempore?</p>
             <div className="flex gap-1 items-center mt-[30px]">
               <button className="btn btn-primary">Get for free</button>
-              <button className="btn btn-text flex gap-1 items-center">
+              <button className="btn btn-text flex gap-2 items-center">
                 <span>
                   Learn more
                 </span>
-                <Image src="/assets/arrow-right.svg" alt="arrow-right" width={20} height={20} className="text-white bg-white" />
+                <Image src="/assets/arrow-right.svg" alt="arrow-right" width={20} height={20} className="text-white bg-white rounded-md" />
               </button>
             </div>
           </div>
